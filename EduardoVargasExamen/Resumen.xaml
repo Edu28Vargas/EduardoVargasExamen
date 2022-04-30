@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EduardoVargasExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="RESUMEN INFORMACION ESTUDIANTIL" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Blue" FontSize="25"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "></Image>
+            <Label x:Name="lbluser" FontSize="20" HorizontalTextAlignment="Center" TextColor="Blue"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre del Estudiante:" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblNombre" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="1" TextColor="Blue"/>
+                <Label Text="Valor de Matriculacion: " FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Label x:Name="lblValMat" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1" TextColor="Blue"/>
+                <Label Text="Tres Cuotas de: " FontSize="20" Grid.Row="2" Grid.Column="0"/>
+                <Label x:Name="lblCuotas" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="1" TextColor="Blue"/>
+                <Label Text="Valor total: " FontSize="20" Grid.Row="3" Grid.Column="0"/>
+                <Label x:Name="lblTotal" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="1" TextColor="Blue"/>
+
+            </Grid>
+
+
+            <Button x:Name="btnSalir" Text="Salir" Clicked="btnSalir_Clicked"   TextColor="White" BackgroundColor="Blue" FontSize="25"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

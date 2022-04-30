@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EduardoVargasExamen.MainPage">
+
+    <StackLayout>
+
+
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="EXAMEN PRIMER PARCIAL" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
+        </Frame>
+        <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "></Image>
+
+
+        <Entry x:Name="txtUser" Placeholder="Usuario"></Entry>
+        <Entry x:Name="txtPass" Placeholder="Contraseña" IsPassword="True"></Entry>
+        <Button x:Name="btnLogin" Text="Login" Clicked="btnLogin_Clicked"></Button>
+
+    </StackLayout>
+
+</ContentPage>

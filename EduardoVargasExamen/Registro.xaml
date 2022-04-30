@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EduardoVargasExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <Label Text="REGISTRO DE ESTUDIANTE" HorizontalTextAlignment="Center" TextColor="White" BackgroundColor="Blue" FontSize="25"/>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png "></Image>
+            <Label x:Name="lbluser" FontSize="20" HorizontalTextAlignment="Center" TextColor="Blue"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Informacion Estudiante:" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Placeholder="Ingrese Nombres Completos" Keyboard="Text" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="Monto Inicial: " FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtMonto" Placeholder="Valor Inicial Matriculacion " Keyboard="Numeric" Grid.Row="1" Grid.Column="1"></Entry>
+                <Label Text="Pago Mensual: " FontSize="20" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtCuota" Placeholder="Valor de cada cuota" IsReadOnly="True" Keyboard="Numeric"  Grid.Row="2" Grid.Column="1"></Entry>
+            </Grid>
+
+
+            <Button x:Name="btnCuota" Text="Calcular" Clicked="btnCuota_Clicked"  Grid.Row="3" Grid.Column="1" TextColor="White" BackgroundColor="Blue" FontSize="25"></Button>
+            <Button x:Name="btnResumen" Text="Resumen" Clicked="btnResumen_Clicked"  Grid.Row="3" Grid.Column="1" TextColor="White" BackgroundColor="Blue" FontSize="25"></Button>
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
